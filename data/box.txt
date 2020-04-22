@@ -1,0 +1,21 @@
+# Top shelf
+
+R-2eded539-9485-4345-9130-4f4cbeaf9ad5 # DHM 50 years
+R-b2c44916-3b24-44ac-b900-028560867d52 # Messiaen edition
+R-a88d71b0-eb9f-4d78-82bc-182ebe6bb172 # Schubert Lieder on Record (missing disc 16)
+R-0d3d2278-b65e-47b3-9b5d-21cab018b588 # Casals
+R-6cdd4117-fd13-4ee3-b5cd-18cf346ab77e # Mravinsky
+R-5fa07e95-df70-46de-aea1-f313d24132a2 # Minimal Piano Collection
+R-08973679-f85f-430d-a8c6-879142dec641 # Minimal Piano Collection X-XX
+R-0c0ce09c-a65e-4ea2-8c39-d6975383da7f # Minimal Piano Collection XXI-XXVIII
+#Francis Poulenc Oeuvres Completes
+R-81f2e090-d7d9-4c7b-a5e1-8afa38d35a5e # Liszt Master and Magician
+R-f4697bcc-707a-41ba-a0be-85cdb4491632 # Karajan box
+R-9bcd75dd-995e-482b-8ba7-1ef074d253de # Verdi The Great Operas
+#Naxos Schubert Lieder
+R-db89c935-63f1-4fc0-a3f1-2cd34000a991 # Sacred Music
+# VW Boult
+R-60da23e0-59ce-4c0b-8a4a-fd4d11e5ef3a # Perfect Jazz Collection
+R-3a21cd92-a35f-42b2-a3d7-0c2f168a6217 # Perfect Jazz Collection 2
+R-18572d3b-b8d6-4ac1-8cda-6951a8f625d5 # Brilliant Mozart (I think so - various editions)
+R-cf74e971-b791-4c23-ab2d-2189e6f8195a # Brilliant Bach

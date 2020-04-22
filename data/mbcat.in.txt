@@ -2,9 +2,12 @@
 
 # blank line
 
-R-930dde80-8e2b-47b6-9aae-56676ae86d1f # Rostropovich box
-R-0841d469-ef76-41ea-b1aa-d5cb8b98577c # Oistrakh Trio
+#R-930dde80-8e2b-47b6-9aae-56676ae86d1f # Rostropovich box
+#R-0841d469-ef76-41ea-b1aa-d5cb8b98577c # Oistrakh Trio
 #R-b06c3767-685c-3ad0-93a3-e38895601aa9 # Muse
 #R-9c58fce5-6089-4072-861c-5d289dbd7d5a # Tenebrae
 #R-180954b2-3aed-420f-876a-70c09f1ae1bd # Prog Rock
 #R-f4697bcc-707a-41ba-a0be-85cdb4491632 # Karajan box
+R-5189b144-3042-45cd-9ecf-ac89b558dcb6 # Solti Gotterdammerung
+R-2eded539-9485-4345-9130-4f4cbeaf9ad5 # DHM 50 years
+R-b2c44916-3b24-44ac-b900-028560867d52 # Messiaen edition
