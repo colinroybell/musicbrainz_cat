@@ -5,10 +5,10 @@ import time
 import sys
 import re
 import copy
+from trackstats import TrackStats
 
 # This sorts out unicode for debugging for now
 sys.stdout = open(1, 'w', encoding='utf-8', closefd=False);
-
 
 type_lookup = {
     'A':'artist',
@@ -50,7 +50,7 @@ musicbrainzngs.set_useragent("crb_tagger","0.1",contact="colin@ps116.org.uk")
 def musicbrainz_request(type_id):
     print("Requesting type_id {}".format(type_id),flush=True)
     id = type_id[2:]
-
+-
 
     object_type = type_lookup[type_id[0]]
 
@@ -62,7 +62,7 @@ def musicbrainz_request(type_id):
     print(type_id)
 
 
-    time.sleep(0.1)
+    time.sleep(1)
 
     try:
         if object_type == 'release-group':
@@ -110,9 +110,10 @@ def catalogue_recordings():
                         print(composer)
                     title = work_dat['work']['title']
                     if title not in class_cat[composer]:
-                        class_cat[composer][title] = []
+                        class_cat[composer][title] = {}
                     if credit_phrase not in class_cat[composer][title]:
-                        class_cat[composer][title].append(credit_phrase)
+                        class_cat[composer][title][credit_phrase] = TrackStats()
+                    class_cat[composer][title][credit_phrase].append(rec_dat['recording']['length'])
 
 def recording_to_work(rec_id):
     rec_dat = data ['recording'][rec_id]
@@ -144,6 +145,7 @@ def get_superwork(work_id):
 def add_owned(type_id):
     type_char = type_id[0]
     id = type_id[2:]
+    print(type_id)
     if type_char == 'G': # recording group
         rg_dat = musicbrainz_request(type_id)
         data['recording-group'][id]['owned']='CD'
@@ -167,6 +169,7 @@ comment_regex = re.compile(r'\s*\#.*')
 
 with open('data/mbcat.in.txt','r') as f:
     for line in f:
+        print(line)
         line = line.strip()
         line = comment_regex.sub('',line)
         if line:
@@ -179,8 +182,8 @@ for composer, _ in sorted(class_cat.items()):
     print("{}".format(composer))
     for work, artists in sorted(class_cat[composer].items()):
         print("    {}".format(work))
-        for artist in sorted(artists):
-            print("        {}".format(artist))
+        for artist,track_stats in sorted(artists.items()):
+            print("        {} {}".format(artist,track_stats))
     print("")
 
 with open('cache/mb.json','w') as f:
